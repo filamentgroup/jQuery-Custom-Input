@@ -1,0 +1,5 @@
+/* page styles */
+body { font-family: "Segoe UI", Frutiger,Tahoma,Helvetica,"Helvetica Neue", Arial, sans-serif; }
+fieldset { margin-top: 1em; margin-bottom: 1em; border:1px solid #ddd; }
+legend { font-weight:bold; }
+label { margin-right:1.2em; }

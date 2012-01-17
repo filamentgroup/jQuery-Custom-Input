@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<title>Custom input</title>
+	<link href="css/basic.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../-shared/EnhanceJS/enhance.js"></script>		
+	<script type="text/javascript">
+		// Run capabilities test
+		enhance({
+			loadScripts: [
+				'../-shared/jquery.min.js',
+				'js/jQuery.customInput.js',
+				'js/example.js'
+			],
+			loadStyles: ['css/enhanced.css']	
+		});   
+    </script>
+</head>
+
+<body>
+
+
+<form action="#" method="post">	
+	<fieldset>
+		<legend>Which genres do you like?</legend>
+		<input type="checkbox" name="genre" id="action" value="action" />
+		<label for="action">Action / Adventure</label>
+		
+		<input type="checkbox" name="genre" id="comedy" value="comedy" />
+		<label for="comedy">Comedy</label>
+		
+		<input type="checkbox" name="genre" id="check-3" value="epic" />
+		<label for="check-3">Epic / Historical</label>
+		
+		<input type="checkbox" name="genre" id="science" value="science" />
+		<label for="science">Science Fiction</label>
+		
+		<input type="checkbox" name="genre" id="romance" value="romance" />
+		<label for="romance">Romance</label>
+		
+		<input type="checkbox" name="genre" id="western" value="western" />
+		<label for="western">Western</label>
+	</fieldset>
+		
+	<fieldset>
+		<legend>Caddyshack is the greatest movie of all time, right?</legend>
+		<input type="radio" name="opinions" id="totally" value="totally" />
+		<label for="totally">Totally</label>
+		
+		<input type="radio" name="opinions" id="no-way" value="no-way" />
+		<label for="no-way">You must be kidding</label>
+		
+		<input type="radio" name="opinions" id="whats-caddyshack" value="whats-caddyshack" />
+		<label for="whats-caddyshack">What's Caddyshack?</label>
+	</fieldset>
+	<fieldset>
+		<input type="submit" name="submit" value="submit" />
+	</fieldset>	
+</form>
+
+	
+	
+</body>
+</html>

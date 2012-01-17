@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<title>Custom input</title>
+	<link href="css/basic.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../-shared/EnhanceJS/enhance.js"></script>		
+	<script type="text/javascript">
+		// Run capabilities test
+		enhance({
+			loadScripts: [
+				'../-shared/jquery.min.js',
+				'js/jQuery.customInput.js',
+				'js/example.js'
+			],
+			loadStyles: ['css/enhanced.css']	
+		});   
+    </script>
+</head>
+
+<body>
+
+
+<form action="#" method="post">	
+	<fieldset id="view" class="toggle">
+		<legend>Choose view:</legend>
+		<input type="radio" name="view" id="view-list" value="list" />
+		<label for="view-list">List</label>
+		<input type="radio" name="view" id="view-grid" value="grid" />
+		<label for="view-grid">Grid</label>
+	</fieldset>
+	
+	
+	<fieldset id="show" class="toggle">
+		<legend>Show:</legend>
+		<input type="checkbox" name="show" id="show-comments" value="comments" />
+		<label for="show-comments">Comments</label>
+		<input type="checkbox" name="show" id="show-formatting" value="formatting" />
+		<label for="show-formatting">Formatting</label>
+		<input type="checkbox" name="show" id="show-changes" value="changes" />
+		<label for="show-changes">Changes</label>
+	</fieldset>
+
+</form>
+
+	
+	
+</body>
+</html>
