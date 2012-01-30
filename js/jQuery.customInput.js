@@ -12,7 +12,7 @@ jQuery.fn.customInput = function(){
 			var input = $(this);
 			
 			// get the associated label using the input's id
-			var label = $('label[for='+input.attr('id')+']');
+			var label = $('label[for="'+input.attr('id')+'"]');
 			
 			// wrap the input + label in a div 
 			input.add(label).wrapAll('<div class="custom-'+ input.attr('type') +'"></div>');
@@ -29,7 +29,7 @@ jQuery.fn.customInput = function(){
 			})
 			.trigger('updateState')
 			.click(function(){ 
-				$('input[name='+ $(this).attr('name') +']').trigger('updateState'); 
+				$('input[name="'+ $(this).attr('name') +'"]').trigger('updateState'); 
 			})
 			.focus(function(){ 
 				label.addClass('focus'); 
