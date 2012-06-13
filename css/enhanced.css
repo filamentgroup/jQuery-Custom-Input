@@ -34,6 +34,7 @@ legend { font-size:1.4em; font-weight:bold; padding:.2em 5px; }
 #show { width:250px; display: block; clear: left; }
 #show .custom-checkbox,#show .custom-radio { width:33%; float:left; }
 .toggle label { border-collapse:collapse; }
+.toggle .custom-checkbox label span,.toggle .custom-radio label span { background:none; }
 .toggle .custom-checkbox label,.toggle .custom-radio label { padding:.4em 1em; border:1px solid #aaa; background-color:#eee; text-align:center; cursor:pointer; font-size:1.2em; width:auto; overflow:visible; background:#459e00 url(../images/button-green.gif) no-repeat left center; color:#fff; border-color:#2d7406; text-shadow:-1px -1px 0 #37730e; }
 .toggle .custom-checkbox label.hover,
 .toggle .custom-checkbox label.focus,
