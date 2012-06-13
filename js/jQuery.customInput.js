@@ -3,6 +3,7 @@
  * --------------------------------------------------------------------
  * jQuery customInput plugin
  * Author: Maggie Costello Wachs maggie@filamentgroup.com, Scott Jehl, scott@filamentgroup.com
+ * Updates: George Walters II walterg2@gmail.com
  * Copyright (c) 2009 Filament Group 
  * licensed under MIT (filamentgroup.com/examples/mit-license.txt)
  * --------------------------------------------------------------------
@@ -16,7 +17,7 @@ jQuery.fn.customInput = function () {
 				label = $('label[for="' + input.attr('id') + '"]');
 
 			// add in an empty span tag to contain the sprite image
-			label.prepend("<span></span");
+			label.prepend("<span></span>");
 
 			// wrap the input + label in a div 
 			input.add(label).wrapAll('<div class="custom-' + input.attr('type') + '"></div>');
