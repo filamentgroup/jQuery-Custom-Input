@@ -6,20 +6,27 @@ legend { font-size:1.4em; font-weight:bold; padding:.2em 5px; }
 /* Custom checkboxes, radios */
 
 /*	wrapper divs */
-.custom-checkbox,.custom-radio { position:relative; }
+.custom-checkbox,.custom-radio { position:relative; height:37px; }
 
 /* input, label positioning */
-.custom-checkbox input,.custom-radio input { position:absolute; left:2px; top:2px; margin:0; }
-.custom-checkbox label,.custom-radio label { display:block; position:relative; font-size:1.3em; padding-right:1em; line-height:1; padding:.5em 0 .5em 30px; margin:0 0 .3em; cursor:pointer; }
+.custom-checkbox input,.custom-radio input { position:absolute; left:7px; top:7px; margin:0; }
+.custom-checkbox label,.custom-radio label { display:block; position:relative; font-size:1.3em; line-height:1; padding:.5em 0 .5em 45px; margin:0 0 .3em; cursor:pointer; }
+.custom-checkbox label span, .custom-radio label span { background:url('../images/sprite.png') no-repeat; display:inline-block; width:37px; height:37px; position:absolute; top:-5px; left:0; }
+.custom-radio label span { width:35px; height:35px }
 
 /* states */
-.custom-checkbox label { background:url(../images/checkbox.gif) no-repeat; }
-.custom-radio label { background:url(../images/radiobutton.gif) no-repeat; }
-.custom-checkbox label,.custom-radio label { background-position:-10px -14px; }
-.custom-checkbox label.hover,.custom-checkbox label.focus,.custom-radio label.hover,.custom-radio label.focus { background-position:-10px -114px; }
-.custom-checkbox label.checked,.custom-radio label.checked { background-position:-10px -214px; }
-.custom-checkbox label.checkedHover,.custom-checkbox label.checkedFocus { background-position:-10px -314px; }
-.custom-checkbox label.focus,.custom-radio label.focus { outline:1px dotted #ccc; }
+/* CheckBoxes */
+.custom-checkbox label span { background-position:-136px 0; }
+.custom-checkbox label.hover span,.custom-checkbox label.focus span { background-position:-173px 0; }
+.custom-checkbox label.checked span { background-position:-210px 0; }
+.custom-checkbox label.focus span { outline:1px dotted #ccc; }
+.custom-checkbox label.checked.hover span,.custom-checkbox label.checked.focus span { background-position:-247px 0; }
+/* Radio Buttons */
+.custom-radio label span { background-position:3px 0; }
+.custom-radio label.hover span,.custom-radio label.focus span { background-position:-32px 0; }
+.custom-radio label.checked span { background-position:-67px 0; }
+.custom-radio label.checked.hover span, .custom-radio label.checked.focus span {background-position:-102px 0; }
+.custom-radio label.focus span { outline:1px dotted #ccc; }
 
 /*toggle button examples*/
 #view { width:100px; display: block; }
