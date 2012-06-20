@@ -20,6 +20,10 @@ legend { font-size:1.4em; font-weight:bold; padding:.2em 5px; }
 .custom-checkbox label.checked,.custom-radio label.checked { background-position:-10px -214px; }
 .custom-checkbox label.checkedHover,.custom-checkbox label.checkedFocus { background-position:-10px -314px; }
 .custom-checkbox label.focus,.custom-radio label.focus { outline:1px dotted #ccc; }
+.custom-checkbox label.disabled,.custom-radio label.disabled,
+.custom-checkbox label.hover.disabled,.custom-radio label.hover.disabled 
+{ background-position:-10px -414px; color: #8b8b8b; }
+.custom-checkbox label.checked.disabled,.custom-radio label.checked.disabled { background-position:-10px -514px; color: #8b8b8b; }
 
 /*toggle button examples*/
 #view { width:100px; display: block; }
