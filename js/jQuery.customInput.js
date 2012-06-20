@@ -2,6 +2,7 @@
  * --------------------------------------------------------------------
  * jQuery customInput plugin
  * Author: Maggie Costello Wachs maggie@filamentgroup.com, Scott Jehl, scott@filamentgroup.com
+ * Updates: Tomek Wytrebowicz tomalecpub@gmail.com
  * Copyright (c) 2009 Filament Group 
  * licensed under MIT (filamentgroup.com/examples/mit-license.txt)
  * --------------------------------------------------------------------
@@ -36,6 +37,9 @@ jQuery.fn.customInput = function(){
 				if(input.is(':checked')){  $(this).addClass('checkedFocus'); } 
 			})
 			.blur(function(){ label.removeClass('focus checkedFocus'); });
+
+			// attach disabled class to disabled input
+			label.toggleClass('disabled', this.disabled);
 		}
 	});
 };
