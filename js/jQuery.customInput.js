@@ -2,14 +2,14 @@
  * --------------------------------------------------------------------
  * jQuery customInput plugin
  * Author: Maggie Costello Wachs maggie@filamentgroup.com, Scott Jehl, scott@filamentgroup.com
+ * Updates Tomek Wytrebowicz tomalecpub@gmail.com
  * Copyright (c) 2009 Filament Group 
  * licensed under MIT (filamentgroup.com/examples/mit-license.txt)
  * --------------------------------------------------------------------
  */
 jQuery.fn.customInput = function(){
-	return $(this).each(function(){	
-		if($(this).is('[type=checkbox],[type=radio]')){
-			var input = $(this);
+	return $(this).each(function(index, input){	
+		if(input.is('[type=checkbox],[type=radio]')){
 			
 			// get the associated label using the input's id
 			var label = $('label[for='+input.attr('id')+']');
