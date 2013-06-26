@@ -6,7 +6,10 @@
  * licensed under MIT (filamentgroup.com/examples/mit-license.txt)
  * --------------------------------------------------------------------
  */
-jQuery.fn.customInput = function(){
+
+(function ($) {
+
+$.fn.customInput = function(){
 	return $(this).each(function(){	
 		if($(this).is('[type=checkbox],[type=radio]')){
 			var input = $(this);
@@ -39,6 +42,8 @@ jQuery.fn.customInput = function(){
 		}
 	});
 };
+
+}(jQuery));
 
 
 	
