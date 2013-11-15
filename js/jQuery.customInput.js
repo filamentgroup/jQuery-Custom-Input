@@ -32,7 +32,7 @@
 				})
 				.trigger('updateState')
 				.click(function(){ 
-					$('input[name="'+ $(this).attr('name') +'"]').trigger('updateState'); 
+					$('input[name="'+ $(this).attr('name').replace(/\[/,'\\[').replace(/\]/,'\\]') +'"]').trigger('updateState'); 
 				})
 				.focus(function(){ 
 					label.addClass('focus'); 
