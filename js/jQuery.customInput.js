@@ -15,7 +15,10 @@
 				var input = $(this);
 				
 				// get the associated label using the input's id
-				var label = $('label[for="'+input.attr('id')+'"]');
+				var label = input.siblings('label[for="'+input.attr('id')+'"]:first');
+				if (!label.length) {
+          				label = input.closest('label[for="'+input.attr('id')+'"]:first');
+		 		}
 				
 				// wrap the input + label in a div 
 				input.add(label).wrapAll('<div class="custom-'+ input.attr('type') +'"></div>');
